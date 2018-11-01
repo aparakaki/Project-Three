@@ -320,7 +320,7 @@ class Reminder extends React.Component {
                             {/**************Display of existing events****************/}
                             {this.state.events.map((item, index) => {
                                 return (
-                                    <Card body>
+                                    <Card body key={item.id}>
                                         <CardTitle>{item.item}</CardTitle>
                                         <CardText>
                                             <p>{item.note}</p>
